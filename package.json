@@ -1,7 +1,7 @@
 {
-  "name": "front-end-project",
+  "name": "reverb-js",
   "version": "1.0.0",
-  "description": "",
+  "description": "Endless music",
   "main": "index.js",
   "scripts": {
     "start": "node server/server.js"
