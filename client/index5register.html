@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/carousel.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/articles.css">    
+    <link rel="stylesheet" href="./styles/authentication.css">
+
+    <link rel="stylesheet" href="/static/fonts/ColabThi.otf">
+	<link rel="stylesheet" href="/static/fonts/DroidSans-Bold.ttf">
+    <link rel="stylesheet" href="/static/fonts/DroidSans.ttf">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="logo">
+                <img src="./images/envisioned.png" alt="envisioned-logo">
+            </div>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Places</a></li>
+                <li class="media-icon"><img src="./images/rss.png" alt="rss"></li>                
+                <li class="media-icon"><img src="./images/twitter.png" alt="twitter"></li>
+                <li class="media-icon"><img src="./images/facebook.png" alt="facebook"></li>
+            </ul>    
+        </nav>
+        <div class="title">
+            <h1>Register</h1>
+        </div>
+    </header>
+
+    <main id="content">
+        <div class="auth-form">
+            <form action="POST">
+                <div class="form-group">
+                    <label class="form-label" for="username">Username:</label>
+                    <input class="form-control" type="text" id="username">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="password">Password:</label>
+                    <input class="form-control" type="password" id="password">
+                </div>
+                <div class="form-group">
+                    <label class="form-label" for="password">Confirm:</label>
+                    <input class="form-control" type="password" id="password">
+                </div>
+                <div class="form-group">
+                    <input class="submit-form" type="submit" value="Register">
+                </div>                
+            </form>
+        </div>     
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <div class="footer-text">
+                <h4>Who we are</h4>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, officiis. Cumque nihil fuga assumenda dolores fugit suscipit deserunt minima earum.
+            </div>
+            <div class="footer-text">
+                <h4>What we do</h4>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti optio animi fugiat accusamus quos veritatis laudantium corporis. Numquam, commodi dicta!
+            </div>
+            <div class="footer-text">
+                <h4>Why we do it</h4>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat facere corporis voluptas cum. Laboriosam cum nisi soluta laborum eius pariatur.
+            </div>            
+        </div>
+        <div class="credits">
+            <span class="darken">Asembled by</span> Pesho | <span class="darken">Powered by</span> Telerik Academy
+        </div>
+    </footer>
+</body>
+</html>

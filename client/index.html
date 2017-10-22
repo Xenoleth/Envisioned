@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="./styles/carousel.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link rel="stylesheet" href="./styles/footer.css">
-
-    <link rel="stylesheet" href="/static/fonts/ColabThi.otf">
-	<link rel="stylesheet" href="/static/fonts/DroidSans-Bold.ttf">
-	<link rel="stylesheet" href="/static/fonts/DroidSans.ttf">
+    <link rel="stylesheet" href="./styles/articles.css">    
+    <link rel="stylesheet" href="./styles/authentication.css">
+    
+    <link rel="stylesheet" href="./static/fonts/ColabThi.otf">
+	<link rel="stylesheet" href="./static/fonts/DroidSans-Bold.ttf">
+    <link rel="stylesheet" href="./static/fonts/DroidSans.ttf">
 </head>
 <body>
     <header>
@@ -23,7 +25,9 @@
             </div>
             <ul>
                 <li><a href="">Home</a></li>
-                <li><a href="">Places</a></li>
+                <li><a href="">Articles</a></li>
+                <li><a href="">Register</a></li>
+                <li><a href="">Log in</a></li>
                 <li class="media-icon"><img src="./images/rss.png" alt="rss"></li>                
                 <li class="media-icon"><img src="./images/twitter.png" alt="twitter"></li>
                 <li class="media-icon"><img src="./images/facebook.png" alt="facebook"></li>
@@ -31,6 +35,9 @@
         </nav>
         <div id="carousel">
             <div id="carousel-main">
+                <div class="carousel-image">
+                    <img src="./images/ploviv.jpg" alt="plovdiv">
+                </div>
                 <div class="carousel-overlay">
                     <a class="arrow-icon" href=""><img src="./images/left-arrow.png" alt="left-arrow"></a>
                     <a class="zoom-icon" href=""><img src="./images/zoom.png" alt="zoom"></a>
@@ -38,14 +45,30 @@
                     <a class="arrow-icon" href=""><img src="./images/right-arrow.png" alt="right-arrow"></a>      
                 </div>
                 <div id="carousel-info">
-                    Some awesome - text
+                    Plovediv city
                 </div>                
             </div>
             <div class="carousel-boxes">
-                <div class="carousel-secondary"></div>
-                <div class="carousel-secondary"></div>
-                <div class="carousel-secondary"></div>
-                <div class="carousel-secondary"></div>  
+                <div class="carousel-secondary">
+                    <div class="carousel-image">
+                        <img src="./images/belogradchik.jpg" alt="belogradchik">
+                    </div>
+                </div>
+                <div class="carousel-secondary">
+                    <div class="carousel-image">
+                        <img src="./images/ledenika.jpg" alt="ledenika">
+                    </div>
+                </div>
+                <div class="carousel-secondary">
+                    <div class="carousel-image">
+                        <img src="./images/chernomore.jpg" alt="chernomore">
+                    </div>
+                </div>
+                <div class="carousel-secondary">
+                    <div class="carousel-image">
+                        <img src="./images/raiskopraskalo.jpg" alt="raiskopraskalo">
+                    </div>
+                </div>  
             </div>
         </div>
     </header>
@@ -96,35 +119,35 @@
         <div class="images">
             <div class="image-wrapper">
                 <div class="img"> 
-                    <img src="" alt="">
+                    <img src="./images/belogradchik.jpg" alt="belogradchik">
                     <div class="img-overlay">
                         <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
                         <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
                     </div>
                 </div>
                 <div class="img"> 
-                    <img src="" alt="">
+                    <img src="./images/chernomore.jpg" alt="chernomore">
                     <div class="img-overlay">
                         <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
                         <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
                     </div>
                 </div>
                 <div class="img"> 
-                    <img src="" alt="">
+                    <img src="./images/ledenika.jpg" alt="ledenika">
                     <div class="img-overlay">
                         <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
                         <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
                     </div>
                 </div>
                 <div class="img"> 
-                    <img src="" alt="">    
+                    <img src="./images/ploviv.jpg" alt="plovdiv">    
                     <div class="img-overlay">
                         <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
                         <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
                     </div>
                 </div>
                 <div class="img"> 
-                    <img src="" alt="">
+                    <img src="./images/raiskopraskalo.jpg" alt="raiskopraskalo">
                     <div class="img-overlay">
                         <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
                         <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
