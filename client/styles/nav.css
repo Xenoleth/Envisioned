@@ -1,0 +1,47 @@
+nav ul {
+    border-top: .5px solid #707E8C;
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0 20px;
+    overflow: hidden;
+    background: linear-gradient(#465360, #323b44);
+    
+}
+
+nav li {
+    float: left;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 black;
+    font-family: 'DroidSans', Arial, sans-serif;
+    font-size: 13px;
+}
+
+nav li a:hover {
+    color: #BABABA;
+}
+
+nav li a.active {
+    color: #BABABA;
+    font-style: italic;
+}
+
+.media-icon {
+    float: right;
+    padding: 15px 15px 10px 15px;
+}
+
+.media-icon:hover {
+    background-color: #45515D;
+}
+
+#logo {
+    margin: 65px 13px 35px;
+}

@@ -5,21 +5,153 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles/layout.css">
+    <link rel="stylesheet" href="./styles/nav.css">
+    <link rel="stylesheet" href="./styles/carousel.css">
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+    <link rel="stylesheet" href="/static/fonts/ColabThi.otf">
+	<link rel="stylesheet" href="/static/fonts/DroidSans-Bold.ttf">
+	<link rel="stylesheet" href="/static/fonts/DroidSans.ttf">
 </head>
 <body>
     <header>
         <nav>
+            <div id="logo">
+                <img src="./images/envisioned.png" alt="envisioned-logo">
+            </div>
             <ul>
-                <li>Home</li>
-                
-            </ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Places</a></li>
+                <li class="media-icon"><img src="./images/rss.png" alt="rss"></li>                
+                <li class="media-icon"><img src="./images/twitter.png" alt="twitter"></li>
+                <li class="media-icon"><img src="./images/facebook.png" alt="facebook"></li>
+            </ul>    
         </nav>
+        <div id="carousel">
+            <div id="carousel-main">
+                <div class="carousel-overlay">
+                    <a class="arrow-icon" href=""><img src="./images/left-arrow.png" alt="left-arrow"></a>
+                    <a class="zoom-icon" href=""><img src="./images/zoom.png" alt="zoom"></a>
+                    <a class="details-icon" href=""><img src="./images/details.png" alt="details"></a>
+                    <a class="arrow-icon" href=""><img src="./images/right-arrow.png" alt="right-arrow"></a>      
+                </div>
+                <div id="carousel-info">
+                    Some awesome - text
+                </div>                
+            </div>
+            <div class="carousel-boxes">
+                <div class="carousel-secondary"></div>
+                <div class="carousel-secondary"></div>
+                <div class="carousel-secondary"></div>
+                <div class="carousel-secondary"></div>  
+            </div>
+        </div>
     </header>
 
-    <div class="content">
-    </div>
+    <main id="content">
+        <div class="information">
+            <div class="group">
+                <div class="icon-settings">
+                    <img src="./images/settings.png" alt="settings">
+                </div>
+                <div class="services">
+                    <h4>What We Offer</h4>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis, cumque doloribus nihil aspernatur blanditiis culpa asperiores dolore tempora labore dolorem, sed unde, accusamus ea velit amet. Eaque est optio quos?
+                </div>
+                <a class="read-more" href="">Read More</a>
+            </div>        
+            <div class="group">
+                <div class="icon-comment">
+                    <img src="./images/comment.png" alt="comment">
+                </div>
+                <div class="contact">
+                    <h4>Who We Are</h4>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui at optio repellat voluptatem quibusdam culpa, ipsam atque pariatur enim voluptas excepturi error velit minus, dignissimos laudantium. Nisi consequuntur earum ab!
+                </div>
+                <a class="read-more" href="">Read More</a>
+            </div>        
+            <div class="group">
+                <div class="icon-media">
+                    <img src="./images/note.png" alt="note">
+                </div>
+                <div class="media">
+                    <h4>Our Mission</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates alias nostrum quisquam? Eius at odit, iure libero commodi repellat suscipit modi, animi nisi impedit molestias optio tenetur iusto aut.
+                </div>  
+                <a class="read-more" href="">Read More</a>
+            </div>
+        </div>
+        
+        
+        <div class="quote">
+            <img class="icon-quote" src="./images/quote.png" alt="quote">
+            <p class="quote-text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium quidem dolorem enim cum error tempore nihil autem a adipisci reiciendis ut beatae, est repellat, saepe inventore quas nesciunt neque maiores voluptatibus. Commodi consectetur asperiores enim optio soluta possimus. Itaque, dolore?
+            </p>
+            <a class="additional-info" href="">Additional Info</a>
+        </div>
+
+        <div class="images">
+            <div class="image-wrapper">
+                <div class="img"> 
+                    <img src="" alt="">
+                    <div class="img-overlay">
+                        <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
+                        <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
+                    </div>
+                </div>
+                <div class="img"> 
+                    <img src="" alt="">
+                    <div class="img-overlay">
+                        <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
+                        <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
+                    </div>
+                </div>
+                <div class="img"> 
+                    <img src="" alt="">
+                    <div class="img-overlay">
+                        <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
+                        <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
+                    </div>
+                </div>
+                <div class="img"> 
+                    <img src="" alt="">    
+                    <div class="img-overlay">
+                        <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
+                        <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
+                    </div>
+                </div>
+                <div class="img"> 
+                    <img src="" alt="">
+                    <div class="img-overlay">
+                        <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
+                        <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </main>
 
     <footer>
+        <div class="footer-info">
+            <div class="footer-text">
+                <h4>Who we are</h4>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, officiis. Cumque nihil fuga assumenda dolores fugit suscipit deserunt minima earum.
+            </div>
+            <div class="footer-text">
+                <h4>What we do</h4>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti optio animi fugiat accusamus quos veritatis laudantium corporis. Numquam, commodi dicta!
+            </div>
+            <div class="footer-text">
+                <h4>Why we do it</h4>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat facere corporis voluptas cum. Laboriosam cum nisi soluta laborum eius pariatur.
+            </div>            
+        </div>
+        <div class="credits">
+            <span class="darken">Asembled by</span> Pesho | <span class="darken">Powered by</span> Telerik Academy
+        </div>
     </footer>
 </body>
 </html>

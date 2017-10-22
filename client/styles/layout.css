@@ -1,0 +1,56 @@
+@font-face {
+    font-family: DroidSans;
+    src: url('../fonts/DroidSans.ttf');
+}
+
+@font-face {
+    font-family: DroidSansBold;
+    src: url('../fonts/DroidSans-Bold.ttf');
+}
+
+@font-face {
+    font-family: ColabThi;
+    src: url('../fonts/ColabThi.otf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer";
+    background: #11161c url("../images/header-background.png") no-repeat center top;
+    font-family: 'DroidSans', Arial, sans-serif;
+    color: #BABABA;
+}
+
+header {
+    height: 100vh;
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+    ". nav ."
+    "carousel carousel carousel";
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+}
+
+nav {
+    grid-area: nav;
+}
+
+#carousel {
+    grid-area: carousel;
+}

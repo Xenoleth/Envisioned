@@ -1,0 +1,136 @@
+main {
+    grid-column: 1 / 4;
+    background: url("../images/main-background.png");
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-auto-rows: auto;
+    color: #4D4D4D;
+}
+
+.information {
+    grid-row: 1;
+    grid-column: 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 50px;
+}
+
+main h4 {
+    font-size: 1.5rem;
+    font-weight: normal;
+    color: #2D2D2D;
+    margin-bottom: 10px;
+    margin-top: 0;
+}
+
+.group {
+    justify-self: center;    
+    padding: 20px 0;
+    margin: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+}
+
+.quote {
+    grid-row: 2;
+    grid-column: 1 / 6;
+    background-color: #fff;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.icon-quote {
+    grid-row: 1;
+    grid-column: 2 / 3;
+    justify-self: center;
+    margin-top: -35px;
+}
+
+.additional-info {
+    grid-row: 3;
+    grid-column: 2 / 3;
+    justify-self: center; 
+    background-color: #11161c;
+    border-radius: 10px;
+    padding: 13px 20px 10px 20px;
+    text-decoration: none;
+    color: white;
+    margin-bottom: -45px;
+    background: linear-gradient(#283444, #11161c);
+    border: 1px solid white;
+}
+
+.additional-info:hover {
+    color: #BABABA;
+}
+
+.quote-text {
+    grid-row: 2;
+    grid-column: 2 / 3;
+}
+
+.images {
+    grid-row: 3;
+    grid-column: 1 / 4;
+    display: grid;
+    padding: 50px 0;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.img {
+    border: 5px solid white;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+    width: 180px;
+    height: 120px;
+    margin: 30px 10px;
+    background-color: #24575E;
+    justify-self: center;
+}
+
+.img-overlay {
+    background-color: rgba(255, 255, 255, 0.30);
+    width: 100%;
+    height: 100%;
+    margin-top: -20px;
+    display: none;
+}
+
+.img:hover .img-overlay {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.zoom-round-icon {
+    justify-self: end;
+    align-self: center;
+}
+
+.details-round-icon {
+    justify-self: start;
+    align-self: center;
+}
+
+.read-more {
+    grid-row: 3;
+    grid-column: 2;
+    justify-self: end;
+    text-align: center;
+    background: linear-gradient(#FFFFFF, #EBEBEB);
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    text-decoration: none;
+    font-size: 9px;
+    width: 50px;
+    color: black;
+    border: 1px solid #D8D8D8;
+}
