@@ -4,48 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/layout.css">
-    <link rel="stylesheet" href="./styles/nav.css">
-    <link rel="stylesheet" href="./styles/carousel.css">
-    <link rel="stylesheet" href="./styles/main.css">
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/articles.css">    
-    <link rel="stylesheet" href="./styles/authentication.css">
+    <title>Vagrant Story</title>
+
+    <link rel="stylesheet" href="/static/styles/layout.css">
+    <link rel="stylesheet" href="/static/styles/nav.css">
+    <link rel="stylesheet" href="/static/styles/carousel.css">
+    <link rel="stylesheet" href="/static/styles/main.css">
+    <link rel="stylesheet" href="/static/styles/footer.css">
+    <link rel="stylesheet" href="/static/styles/articles.css">    
+    <link rel="stylesheet" href="/static/styles/authentication.css">
     
-    <link rel="stylesheet" href="./static/fonts/ColabThi.otf">
-	<link rel="stylesheet" href="./static/fonts/DroidSans-Bold.ttf">
-    <link rel="stylesheet" href="./static/fonts/DroidSans.ttf">
+    <link rel="stylesheet" href="/static/fonts/ColabThi.otf">
+	<link rel="stylesheet" href="/static/fonts/DroidSans-Bold.ttf">
+    <link rel="stylesheet" href="/static/fonts/DroidSans.ttf">
 </head>
 <body>
     <header>
         <nav>
             <div id="logo">
-                <img src="./images/envisioned.png" alt="envisioned-logo">
+                <img src="/static/images/envisioned.png" alt="envisioned-logo">
             </div>
             <ul>
                 <li class="icon-li">            
-                    <img class="menu-icon" src="./images/menu-icon.png" alt="menu-icon">
+                    <img class="menu-icon" src="/static/images/menu-icon.png" alt="menu-icon">
                 </li>
-                <li class="link-li"><a href="">Home</a></li>
+                <li class="link-li"><a href="#/home">Home</a></li>
                 <li class="link-li"><a href="">Articles</a></li>
                 <li class="link-li"><a href="">Register</a></li>
                 <li class="link-li"><a href="">Log in</a></li>
-                <li class="media-icon link-li"><img src="./images/rss.png" alt="rss"></li>                
-                <li class="media-icon link-li"><img src="./images/twitter.png" alt="twitter"></li>
-                <li class="media-icon link-li"><img src="./images/facebook.png" alt="facebook"></li>
+                <li class="media-icon link-li"><img src="/static/images/rss.png" alt="rss"></li>                
+                <li class="media-icon link-li"><img src="/static/images/twitter.png" alt="twitter"></li>
+                <li class="media-icon link-li"><img src="/static/images/facebook.png" alt="facebook"></li>
             </ul>    
         </nav>
         <div id="carousel">
             <div id="carousel-main">
                 <div class="carousel-image">
-                    <img src="./images/ploviv.jpg" alt="plovdiv">
+                    <img src="/static/images/ploviv.jpg" alt="plovdiv">
                 </div>
                 <div class="carousel-overlay">
-                    <a class="arrow-icon" href=""><img src="./images/left-arrow.png" alt="left-arrow"></a>
-                    <a class="zoom-icon" href=""><img src="./images/zoom.png" alt="zoom"></a>
-                    <a class="details-icon" href=""><img src="./images/details.png" alt="details"></a>
-                    <a class="arrow-icon" href=""><img src="./images/right-arrow.png" alt="right-arrow"></a>      
+                    <a class="arrow-icon" href=""><img src="/static/images/left-arrow.png" alt="left-arrow"></a>
+                    <a class="zoom-icon" href=""><img src="/static/images/zoom.png" alt="zoom"></a>
+                    <a class="details-icon" href=""><img src="/static/images/details.png" alt="details"></a>
+                    <a class="arrow-icon" href=""><img src="/static/images/right-arrow.png" alt="right-arrow"></a>      
                 </div>
                 <div id="carousel-info">
                     Plovediv city
@@ -54,22 +55,22 @@
             <div class="carousel-boxes">
                 <div class="carousel-secondary">
                     <div class="carousel-image">
-                        <img src="./images/belogradchik.jpg" alt="belogradchik">
+                        <img src="/static/images/belogradchik.jpg" alt="belogradchik">
                     </div>
                 </div>
                 <div class="carousel-secondary">
                     <div class="carousel-image">
-                        <img src="./images/ledenika.jpg" alt="ledenika">
+                        <img src="/static/images/ledenika.jpg" alt="ledenika">
                     </div>
                 </div>
                 <div class="carousel-secondary">
                     <div class="carousel-image">
-                        <img src="./images/chernomore.jpg" alt="chernomore">
+                        <img src="/static/images/chernomore.jpg" alt="chernomore">
                     </div>
                 </div>
                 <div class="carousel-secondary">
                     <div class="carousel-image">
-                        <img src="./images/raiskopraskalo.jpg" alt="raiskopraskalo">
+                        <img src="/static/images/raiskopraskalo.jpg" alt="raiskopraskalo">
                     </div>
                 </div>  
             </div>
@@ -77,98 +78,7 @@
     </header>
 
     <main id="content">
-        <div class="information">
-            <div class="group">
-                <div class="icon-settings">
-                    <img src="./images/settings.png" alt="settings">
-                </div>
-                <div class="services">
-                    <h4>Recover your health</h4>
-                    Travel the world, breathe the fresh air. Sports should be part of our every-day life and walking, running and traveling fill in the gap of inactivity. Have you finished your daily 10 000 steps?
-                </div>
-                <a class="read-more" href="">Read More</a>
-            </div>        
-            <div class="group">
-                <div class="icon-comment">
-                    <img src="./images/comment.png" alt="comment">
-                </div>
-                <div class="contact">
-                    <h4>Meet people</h4>
-                    We are beings made to communicate. When traveling you get the chance to meet complete strangers, talk to them, learn from them and view the world from their eyes. Immerse yourself in foreign cutures!
-                </div>
-                <a class="read-more" href="">Read More</a>
-            </div>        
-            <div class="group">
-                <div class="icon-media">
-                    <img src="./images/note.png" alt="note">
-                </div>
-                <div class="media">
-                    <h4>The music of nature</h4>
-                    It's now time to venture into the unknown. Delve deep into nature and surround yourself with it's various artistic melodies - the song of the birds, the crackling of the forests, the rustling of the meadows...
-                </div>  
-                <a class="read-more" href="">Read More</a>
-            </div>
-        </div>
         
-        
-        <div class="quote">
-            <img class="icon-quote" src="./images/quote.png" alt="quote">
-            <p class="quote-text">
-                Even with all our technology and the inventions that make modern life so much easier than it once was, it takes just one big natural disaster to wipe all that away and remind us that, here on Earth, we're still at the mercy of nature.
-            </p>
-            <a class="additional-info" href="https://www.brainyquote.com/quotes/topics/topic_nature.html">Additional Info</a>
-        </div>
-
-        <div class="images">
-            <div class="image-wrapper">
-                <div class="img"> 
-                    <div class="img-image">
-                        <img src="./images/belogradchik.jpg" alt="belogradchik">
-                    </div>                    
-                    <div class="img-overlay">
-                        <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
-                        <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
-                    </div>
-                </div>
-                <div class="img"> 
-                    <div class="img-image">
-                        <img src="./images/chernomore.jpg" alt="chernomore">
-                    </div>                    
-                    <div class="img-overlay">
-                        <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
-                        <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
-                    </div>
-                </div>
-                <div class="img"> 
-                    <div class="img-image">
-                        <img src="./images/ledenika.jpg" alt="ledenika">    
-                    </div>
-                    <div class="img-overlay">
-                        <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
-                        <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
-                    </div>
-                </div>
-                <div class="img"> 
-                    <div class="img-image">
-                        <img src="./images/ploviv.jpg" alt="plovdiv">
-                    </div>                        
-                    <div class="img-overlay">
-                        <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
-                        <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
-                    </div>
-                </div>
-                <div class="img"> 
-                    <div class="img-image">
-                        <img src="./images/raiskopraskalo.jpg" alt="raiskopraskalo">
-
-                    </div>
-                    <div class="img-overlay">
-                        <a class="zoom-round-icon" href=""><img  src="./images/zoom-round.png" alt="zoom-icon"></a>
-                        <a class="details-round-icon" href=""><img src="./images/details-round.png" alt="details-icon"></a>
-                    </div>
-                </div>
-            </div>            
-        </div>
     </main>
 
     <footer>
@@ -190,5 +100,26 @@
             <span class="darken">Asembled by</span> Pesho | <span class="darken">Powered by</span> Telerik Academy
         </div>
     </footer>
+
+    <script src="/libs/jquery/dist/jquery.js"></script>    
+    <script src="/libs/handlebars/dist/handlebars.min.js"></script>
+    <script src="/libs/navigo/lib/navigo.js"></script>    
+    <script src="/libs/systemjs/dist/system.js"></script>
+    <script>
+        SystemJS.config({
+            transpiler: 'plugin-babel',
+            map: {
+                // System.js files
+                'plugin-babel': 'libs/systemjs-plugin-babel/plugin-babel.js',
+                'systemjs-babel-build': 'libs/systemjs-plugin-babel/systemjs-babel-browser.js',
+                'text': 'libs/systemjs-plugin-text/text.js'
+            },
+        });
+        SystemJS.import('/static/scripts/app.js')
+            .then(() => {
+                console.log('importing');
+            });
+    </script>
+    <script src="/static/scripts/app.js"></script>
 </body>
 </html>

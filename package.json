@@ -22,9 +22,17 @@
     "cors": "^2.8.4",
     "express": "^4.15.4",
     "express-session": "^1.15.5",
+    "handlebars": "^4.0.11",
     "jquery": "^3.2.1",
+    "live-server": "^1.2.0",
     "mongodb": "^2.2.31",
+    "navigo": "^5.3.3",
     "passport": "^0.4.0",
-    "passport-local": "^1.0.0"
+    "passport-local": "^1.0.0",
+    "require": "^2.4.20",
+    "serve-favicon": "^2.4.5",
+    "systemjs": "^0.20.19",
+    "systemjs-plugin-babel": "0.0.25",
+    "systemjs-plugin-text": "0.0.11"
   }
 }
