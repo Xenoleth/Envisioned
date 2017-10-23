@@ -11,9 +11,11 @@ const run = (router) => {
             dataType: 'json',
             contentType: 'application/json; charset=UTF-8',
             data: JSON.stringify(credentials),                
-            complete: (res) => {
+            complete: (res) => {                
                 const userId = res.responseJSON.id;
+                const userName = res.responseJSON.username;
                 sessionStorage.setItem('userId', userId);
+                sessionStorage.setItem('userName', userName);
                 router.navigate('/home');
             }
         });

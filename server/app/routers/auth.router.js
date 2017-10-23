@@ -8,7 +8,7 @@ const attachTo = (app, data) => {
         .post('/sign-in', (req, res, next) => {
             data.users.findByUsername(req.body.username)
                 .then((user) => {
-                    return res.json({ id: user._id });
+                    return res.json({ id: user._id, username: user.username });
                 })
                 .catch((err) => {
                     return res.send('No such user was found');

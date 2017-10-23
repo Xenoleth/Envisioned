@@ -49,6 +49,11 @@ const attachTo = (app, data) => {
         const id = req.params.id;
         data.users.findById(new ObjectID(id))
             .then(user => res.json(user));
+    })
+    .post('/postarticle', (req, res) => {
+        // TODO: create posts.data.js, enable post entry, save post in database
+
+        res.send('Post created');
     });
 
     app.use('/api/users', router);
