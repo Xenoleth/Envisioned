@@ -30,8 +30,9 @@
                 </li>
                 <li class="link-li"><a href="#/home">Home</a></li>
                 <li class="link-li"><a href="#/articles">Articles</a></li>
-                <li class="link-li"><a href="#/register">Register</a></li>
-                <li class="link-li"><a href="#/login">Log in</a></li>
+                <li class="link-li register-button"><a href="#/register">Register</a></li>
+                <li class="link-li login-button"><a href="#/login">Log in</a></li>
+                <li class="link-li logout-button"><a href="#/home">Log out</a></li>
                 <li class="media-icon link-li"><img src="/static/images/rss.png" alt="rss"></li>                
                 <li class="media-icon link-li"><img src="/static/images/twitter.png" alt="twitter"></li>
                 <li class="media-icon link-li"><img src="/static/images/facebook.png" alt="facebook"></li>
@@ -120,5 +121,7 @@
                 console.log('importing');
             });
     </script>
+    <script src="/static/scripts/services/logoutService.js"></script>
+    <script src="/static/scripts/services/authButtonService.js"></script>
 </body>
 </html>

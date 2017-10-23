@@ -15,6 +15,7 @@ class UserData extends BaseData {
 
     findByUsername(username) {
         const userToLower = username.toLowerCase();
+
         const user = this.collection.findOne({ username });
 
         return new Promise((resolve, reject) => {

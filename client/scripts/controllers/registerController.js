@@ -1,11 +1,12 @@
-import $ from 'jquery';
 import * as requester from '/static/scripts/requesters/template-requester.js';
+import * as registerService from '/static/scripts/services/registerService.js';
 
-const run = () => {
+const run = (router) => {
     requester.getTemplate('register')
         .then((template) => {
-            console.log(template);
             $('#content').html(template);
+
+            registerService.run(router);
         })
         .catch(err => {
             console.log(err);

@@ -10,13 +10,13 @@ import * as singleArticleController from '/static/scripts/controllers/singleArti
 const root = null;
 const useHash = true;
 const hash = '#';
-var router = new Navigo(root, useHash, hash);
+const router = new Navigo(root, useHash, hash);
 
 router
     .on('/home', () => homeController.run())
     .on('/articles', () => articlesController.run())
     .on('/articles/single', () => singleArticleController.run())
-    .on('/register', () => registerController.run())
-    .on('/login', () => loginController.run())
+    .on('/register', () => registerController.run(router))
+    .on('/login', () => loginController.run(router))
     .on('', () => homeController.run())
     .resolve();
