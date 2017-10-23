@@ -45,3 +45,48 @@ nav li a.active {
 #logo {
     margin: 65px 13px 35px;
 }
+
+.menu-icon {
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+.icon-li {
+    display: none;
+}
+
+@media(max-width: 720px) {
+    nav li {
+        display: block;
+        float: none;
+    }
+
+    .media-icon {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: flex;
+    }
+}
+
+@media(max-width: 384px) {
+    nav ul {
+        display: flex;
+    }
+
+    .icon-li {
+        display: block;
+        justify-content: center;
+    }
+
+    .icon-li:hover .link-li {
+        display: block;
+    }
+
+    .link-li {
+        display: none;
+        justify-content: center;
+    }
+}

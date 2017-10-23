@@ -135,3 +135,35 @@ hr {
 .recent-list li {
     margin-bottom: 10px;
 }
+
+article {
+    margin-bottom: 70px;
+}
+
+@media(max-width: 920px) {
+    .recent-articles {
+        display: none;
+    }
+
+    .page-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+@media(max-width: 720px) {
+    .article-content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .comment-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .author-details {
+        justify-self: start;
+        margin-bottom: 15px;
+    }
+}

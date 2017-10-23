@@ -44,3 +44,10 @@ footer {
 footer span {
     color: #717171;
 }
+
+@media(max-width: 720px) {
+    .footer-info {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
