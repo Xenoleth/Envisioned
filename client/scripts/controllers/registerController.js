@@ -2,7 +2,7 @@ import $ from 'jquery';
 import * as requester from '/static/scripts/requesters/template-requester.js';
 
 const run = () => {
-    requester.getTemplate('home')
+    requester.getTemplate('register')
         .then((template) => {
             console.log(template);
             $('#content').html(template);

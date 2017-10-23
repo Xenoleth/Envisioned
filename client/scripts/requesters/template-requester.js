@@ -3,18 +3,18 @@ const cache = {};
 const getTemplate = (name) => {
     const promise = new Promise((res, rej) => {
         if(cache[name]) {
-            resolve(cache[name]);
+            res(cache[name]);
             return;
         }
 
-        const url = `templates/${name}.handlebars`;
+        const url = `/static/templates/${name}.handlebars`;
         $.get(url, (html) => {
             const template = Handlebars.compile(html);
             cache[name] = template;
-            resolve(template);
+            res(template);
         });
     });
     return promise;
 };
 
-module.exports = { getTemplate };
+export { getTemplate };
