@@ -20,7 +20,7 @@ const attachTo = (app, data) => {
         res.send('Logged out');
     });
 
-    app.use('/auth', router);
+    app.use('/api/auth', router);
 };
 
 module.exports = { attachTo };

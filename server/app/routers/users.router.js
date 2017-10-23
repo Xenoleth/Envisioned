@@ -51,7 +51,7 @@ const attachTo = (app, data) => {
             .then(user => res.json(user));
     });
 
-    app.use('/users', router);
+    app.use('/api/users', router);
 };
 
 module.exports = { attachTo };

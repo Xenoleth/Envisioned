@@ -12,7 +12,7 @@ const attachTo = (app, data) => {
             res.sendFile(path.join(__dirname + '/../../../node_modules/jquery/dist/jquery.min.js'));
         })
         .get('/navigo', (req, res) => {
-            res.sendFile(path.join(__dirname + '/../../../node_modules/navigo/lib/navigo.min.js '));
+            res.sendFile(path.join(__dirname + '/../../../node_modules/navigo/lib/navigo.min.js'));
         });
 
     app.use('/', router);
