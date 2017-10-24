@@ -1,17 +1,19 @@
 const run = (router) => {
     $('.submit-form').on('click', () => {
         const post = {
-            user: sessionStorage.getItem('userName'),
+            userId: sessionStorage.getItem('userId'),
+            userName: sessionStorage.getItem('userName'),
             title: $('#post-title').val(),
             image: $('#post-image').val(),
-            content: $('#post-content').val()            
+            content: $('#post-content').val(),
+            date: new Date()
         };
 
         console.log(post);
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:3000/api/article/post',
+            url: 'http://localhost:3000/api/articles/post',
             dataType: 'json',
             contentType: 'application/json; charset=UTF-8',
             data: JSON.stringify(post),                

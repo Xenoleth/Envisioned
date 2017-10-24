@@ -11,7 +11,8 @@ const attachTo = (app, data) => {
                 username: req.body.userName,
                 title: req.body.title,
                 image: req.body.image,
-                content: req.body.content
+                content: req.body.content,
+                date: req.body.date
             };
 
             data.posts.create(post);      
