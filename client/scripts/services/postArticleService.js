@@ -11,7 +11,7 @@ const run = (router) => {
 
         $.ajax({
             type: 'POST',
-            url: 'http://localhost:3000/api/users/postarticle',
+            url: 'http://localhost:3000/api/article/post',
             dataType: 'json',
             contentType: 'application/json; charset=UTF-8',
             data: JSON.stringify(post),                

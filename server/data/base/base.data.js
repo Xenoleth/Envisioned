@@ -13,9 +13,8 @@ class BaseData {
     }
 
     create(model) {
-        // if(this._isModelValid && !this._isModelValid(model)) {
-        //     return Promise.reject('Invalid model');
-        // }
+        // add validation
+
         return this.collection.insert(model);
     }
 
