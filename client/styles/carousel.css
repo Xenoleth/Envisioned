@@ -83,6 +83,17 @@
     width: 100%;
 }
 
+@media(max-width: 600px) {
+    .carousel-secondary {
+        display: none;
+    }
+
+    #carousel-main {
+        max-width: 25em;
+        max-height: 16.67em;
+    }
+}
+
 @media(min-width: 2000px) {
     #carousel-main {
         width: 50em;
