@@ -15,8 +15,8 @@ const router = new Navigo(root, useHash, hash);
 
 router
     .on('/home', () => homeController.run())
-    .on('/articles', () => articlesController.run())
-    .on('/articles/single', () => singleArticleController.run())
+    .on('/articles', () => articlesController.run(router))
+    .on('/articles/single/:id', (params) => singleArticleController.run(params))
     .on('/articles/post', () => postArticleController.run(router))
     .on('/register', () => registerController.run(router))
     .on('/login', () => loginController.run(router))

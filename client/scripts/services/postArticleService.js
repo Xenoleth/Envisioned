@@ -9,8 +9,6 @@ const run = (router) => {
             date: new Date()
         };
 
-        console.log(post);
-
         $.ajax({
             type: 'POST',
             url: 'http://localhost:3000/api/articles/post',

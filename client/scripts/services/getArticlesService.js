@@ -1,4 +1,4 @@
-const run = () => {
+const all = () => {
     return new Promise ((res, rej) => {
         $.ajax({
             type: 'GET',
@@ -8,6 +8,18 @@ const run = () => {
             }
         });
     });
+};
+
+const single = (postId) => {
+    return new Promise ((res, rej) => {
+        $.ajax({
+            type: 'GET',
+            url: 'http://localhost:3000/api/articles/post?postId=' + postId,              
+            complete: (response) => {                
+                res(response);
+            }
+        });
+    });
 }
 
-export { run };
+export { all, single };

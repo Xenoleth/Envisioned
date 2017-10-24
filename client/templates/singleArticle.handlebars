@@ -1,14 +1,14 @@
 <div class="page-container">
     <div class="article-container">
         <article>
-            <div class="article-title"><h2>Article title</h2></div>
+            <div class="article-title"><h2>{{article.title}}</h2></div>
             <hr>
-            <div class="article-author">Posted by Pesho on 22 Oct 2017 | 25 Comments</div>
+            <div class="article-author">Posted by {{article.username}} on 22 Oct 2017 | 25 Comments</div>
             <div class="article-content">
-                <div class="article-image"><img src="/static/images/theatre.jpg" alt="article-image"></div>
+                <div class="article-image"><img src="{{article.image}}" alt="article-image"></div>
                 <div class="article-summary">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio, dolores reprehenderit sed necessitatibus totam odit nulla asperiores quis illo, numquam quam aliquid in excepturi inventore impedit harum ab commodi esse.
+                        {{article.content}}
                     </p>
                 </div>
             </div>                    
