@@ -90,3 +90,10 @@ nav li a.active {
         justify-content: center;
     }
 }
+
+@media(min-width: 2000px) {
+    .link-li a{
+        font-size: 1.7rem;
+        padding: 30px;
+    }
+}

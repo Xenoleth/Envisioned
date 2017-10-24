@@ -82,3 +82,19 @@
     height: 100%;
     width: 100%;
 }
+
+@media(min-width: 2000px) {
+    #carousel-main {
+        width: 50em;
+        height: 33em;
+    }
+
+    .carousel-secondary {
+        width: 35em;
+        height: 23rem;
+    }
+
+    #carousel-info {
+        font-size: 2em;
+    }
+}

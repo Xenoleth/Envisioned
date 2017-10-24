@@ -8,7 +8,7 @@ const run = () => {
         })
         .catch(err => {
             console.log(err);
-        })
+        });
 };
 
 export { run };

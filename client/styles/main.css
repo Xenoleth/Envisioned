@@ -2,7 +2,7 @@ main {
     grid-column: 1 / 4;
     background: url("../images/main-background.png");
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: 1fr 12fr 1fr;
     grid-auto-rows: auto;
     color: #4D4D4D;
 }
@@ -157,5 +157,40 @@ main h4 {
     .information {
         display: grid;
         grid-template-columns: 1fr;
+    }
+}
+
+@media(min-width: 2000px) {
+    .group h4 {
+        font-size: 3rem;
+    }
+    .group, .quote-text {
+        line-height: 3rem;
+        font-size: 2rem;
+    }  
+
+    .icon-settings, .icon-comment, .icon-media {
+        width: 2em;
+        height: 2em;
+    }
+
+    .icon {
+        width: 100%;
+        height: 100%;
+    }
+
+    .read-more {
+        font-size: 0.7em;
+        width: 7em;
+    }
+
+    .additional-info {
+        font-size: 2em;
+        padding: 1em;
+    }
+
+    .img {
+        width: 25em;
+        height: 17em;
     }
 }

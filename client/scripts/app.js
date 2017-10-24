@@ -7,6 +7,7 @@ import * as registerController from '/static/scripts/controllers/registerControl
 import * as loginController from '/static/scripts/controllers/loginController.js';
 import * as singleArticleController from '/static/scripts/controllers/singleArticleController.js';
 import * as postArticleController from '/static/scripts/controllers/postArticleController.js';
+import * as galleryController from '/static/scripts/controllers/galleryController.js';
 
 const root = null;
 const useHash = true;
@@ -18,6 +19,7 @@ router
     .on('/articles', () => articlesController.run(router))
     .on('/articles/single/:id', (params) => singleArticleController.run(params))
     .on('/articles/post', () => postArticleController.run(router))
+    .on('/gallery', () => galleryController.run())
     .on('/register', () => registerController.run(router))
     .on('/login', () => loginController.run(router))
     .on('', () => homeController.run())
